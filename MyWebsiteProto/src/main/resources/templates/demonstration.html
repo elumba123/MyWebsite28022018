@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head><title>Home Page</title>
+        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="http://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        
+    </head>
+    <body>
+        <main role="main">
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <div th:if="${person}">
+                        <h1 class="jumbotron-heading">Hi, <b> <span th:text="${person.name}"/> </b> <br> Nice to meet you! </br></h1>
+                    </div>
+                    <p> Now that i know you, you have now my permission to visit my website. </p>
+
+                    <div class="alert alert-info" role="alert">
+                        <strong>TIP:</strong> Have fun reading!
+                      <!--   <img src="https://static.wixstatic.com/media/cf42fa_e22493600f0d476187ddd847784d1434~mv2.jpg?dn=17632021_1607332869281282_4891542063794388678_o_edited_edited.jpg" style="height: 150px; wi<dth: 150px;border-radius: 50%;"/>
+                    -->
+                    <img src="https://cdn.shopify.com/s/files/1/0891/8314/products/pft_4dc864af10b02_large.jpeg?v=1459054176" style="height: 150px; width: 150px;border-radius: 50%;"/>
+                    
+                      </div>
+                    <hr/>
+                    <a href="MainPage"> <button  name="ClickHere" type="button" class="btn btn-primary" style="position: relative; left:0%;"> Click here! </button> </a>
+                    
+                </div>
+            </section>
+            <div>
+                
+            </div>
+
+        </main>
+    </body>
+</html>

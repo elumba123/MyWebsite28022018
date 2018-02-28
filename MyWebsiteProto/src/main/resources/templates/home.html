@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head><title>Home Page</title>
+        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="http://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <main role="main">
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <div>
+                        <h1 class="jumbotron-heading">Welcome to  my website Earthlings!</h1>
+                    </div>
+
+                    <p class="lead text-muted"> Before you can enter my website, i would like to know your name first.</p>
+                    <hr/>
+                               <img src="https://imgflip.com/s/meme/Question-Rage-Face.jpg" style="height: 150px; width: 180px;border-radius: 50%;"/>
+                    <div class="container">
+                        <form action="demonstration" method="POST">
+                            <div class="form-group row">
+                                
+                                <input id="name" name="name" placeholder="Enter your name" required="required" class="form-control here" type="text" style="width:300px; position: relative; left:25%;" /> 
+                            </div> 
+                            <div class="form-group row">
+                                <button name="submit" type="submit" class="btn btn-primary" style="position: relative; left:43%;"> Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
